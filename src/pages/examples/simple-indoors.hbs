@@ -1,0 +1,35 @@
+---
+title: Simple Indoor
+description: Display a layer using the Leaflet Indoors plugin.
+layout: example.hbs
+---
+
+<!-- Include Leaflet Indoor package (https://github.com/cbaines/leaflet-indoor) -->
+<script src="https://rawgit.com/cbaines/leaflet-indoor/master/leaflet-indoor.js"></script>
+
+<div id="map"></div>
+
+<script>
+  var map = L.map('map').setView([28.470, -82.44], 13);
+
+  L.esri.basemapLayer('Streets').addTo(map);
+  var featureLayer = L.esri.featureLayer({
+    url: 'https://www25.swfwmd.state.fl.us/arcgis/rest/services/Internal/FacilitiesSearch/MapServer/0'
+  });
+  
+  featureLayer.query()
+    .where("1=1")
+    .run(function(error, featureCollection){
+      console.log('featureCollection', featureCollection.features);
+      indoorLayer = new L.Indoor(featureCollection.features, {
+        getLevel: function(feature) {
+          return parseInt(feature.properties.FLOOR, 10);
+        }
+      });
+      // set the initial level to show
+      indoorLayer.setLevel(1);
+      indoorLayer.addTo(map);
+
+    });
+
+</script>
