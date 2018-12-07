@@ -11,15 +11,24 @@ layout: example.hbs
     add some vertical spacing  */
     margin: 10px auto;
     outline: 1px solid #00ADA7;
+
+    /* rules to allow the chart to hover over the Leaflet map control: */
+    z-index: 401;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    background-color: white;
   }
 </style>
 
-<div id="map"></div>
-
-<!-- Chart.js scatterplot location -->
-<div class="chart-container">
-  <canvas id="chartCanvas"></canvas>
+<div id="map">
+  <!-- Chart.js scatterplot location -->
+  <div class="chart-container">
+    <canvas id="chartCanvas"></canvas>
+  </div>
 </div>
+
+
 
 <!-- Load Chart.js from CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
@@ -58,7 +67,7 @@ layout: example.hbs
         },
         ticks: {
           beginAtZero: true,
-          max: 250,
+          max: 150,
           stepSize: 50
         }
       }],
