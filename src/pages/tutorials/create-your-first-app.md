@@ -50,8 +50,7 @@ The easiest option is to point to a CDN where the libraries are already hosted. 
     crossorigin=""></script>  
 
   <!-- Load Esri Leaflet from CDN.  it has no .css stylesheet of its own, only .js -->
-  <script src="https://unpkg.com/esri-leaflet@{{siteData.latest_esri_leaflet}}/dist/esri-leaflet.js"
-    integrity="{{siteData.latest_esri_leaflet_integrity}}"
+  <script src="/esri-leaflet-debug.js"
     crossorigin=""></script>
 </head>
 <body>
@@ -82,8 +81,7 @@ For our map to display, we must set the height and width for this element.  Sinc
     crossorigin=""></script>  
 
   <!-- Load Esri Leaflet from CDN -->
-  <script src="https://unpkg.com/esri-leaflet@{{siteData.latest_esri_leaflet}}/dist/esri-leaflet.js"
-    integrity="{{siteData.latest_esri_leaflet_integrity}}"
+  <script src="/esri-leaflet-debug.js"
     crossorigin=""></script>
 
   <style>
@@ -128,8 +126,7 @@ Our first step is to create a map object. In our constructor we must provide the
     crossorigin=""></script>  
 
   <!-- Load Esri Leaflet from CDN -->
-  <script src="https://unpkg.com/esri-leaflet@{{siteData.latest_esri_leaflet}}/dist/esri-leaflet.js"
-    integrity="{{siteData.latest_esri_leaflet_integrity}}"
+  <script src="/esri-leaflet-debug.js"
     crossorigin=""></script>
 
   <style>
@@ -197,8 +194,8 @@ In order to display our new layer, we need to add it to our map using Leaflet's 
     crossorigin=""></script>  
 
   <!-- Load Esri Leaflet from CDN -->
-  <script src="https://unpkg.com/esri-leaflet@{{siteData.latest_esri_leaflet}}/dist/esri-leaflet.js"
-    integrity="{{siteData.latest_esri_leaflet_integrity}}"
+  <script src="/esri-leaflet-debug.js"
+    
     crossorigin=""></script>
 
   <style>

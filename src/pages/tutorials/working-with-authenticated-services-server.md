@@ -39,8 +39,8 @@ Here is an outline of the process:
   crossorigin=""></script>
 
   <!-- Load Esri Leaflet from CDN -->
-  <script src="https://unpkg.com/esri-leaflet@{{siteData.latest_esri_leaflet}}/dist/esri-leaflet.js"
-  integrity="{{siteData.latest_esri_leaflet_integrity}}"
+  <script src="/esri-leaflet-debug.js"
+  
   crossorigin=""></script>
 </head>
 <body>
@@ -94,8 +94,8 @@ We'll need to define a few rules to control the style of the elements we have cr
   crossorigin=""></script>
 
   <!-- Load Esri Leaflet from CDN -->
-  <script src="https://unpkg.com/esri-leaflet@{{siteData.latest_esri_leaflet}}/dist/esri-leaflet.js"
-  integrity="{{siteData.latest_esri_leaflet_integrity}}"
+  <script src="/esri-leaflet-debug.js"
+  
   crossorigin=""></script>
 
   <style>
@@ -278,8 +278,8 @@ We have now built a basic Esri Leaflet web map that retrieves an authenticated s
   crossorigin=""></script>
 
   <!-- Load Esri Leaflet from CDN -->
-  <script src="https://unpkg.com/esri-leaflet@{{siteData.latest_esri_leaflet}}/dist/esri-leaflet.js"
-  integrity="{{siteData.latest_esri_leaflet_integrity}}"
+  <script src="/esri-leaflet-debug.js"
+  
   crossorigin=""></script>
 
   <style>

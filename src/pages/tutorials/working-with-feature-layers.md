@@ -31,8 +31,8 @@ Start by copying this skeleton code which outlines the structure of a single pag
     crossorigin=""></script>  
 
   <!-- Load Esri Leaflet from CDN -->
-  <script src="https://unpkg.com/esri-leaflet@{{siteData.latest_esri_leaflet}}/dist/esri-leaflet.js"
-    integrity="{{siteData.latest_esri_leaflet_integrity}}"
+  <script src="/esri-leaflet-debug.js"
+    
     crossorigin=""></script>
 
   <style>
@@ -140,8 +140,8 @@ Here is what the final `html` file should look like for this tutorial:
     crossorigin=""></script>  
 
   <!-- Load Esri Leaflet from CDN -->
-  <script src="https://unpkg.com/esri-leaflet@{{siteData.latest_esri_leaflet}}/dist/esri-leaflet.js"
-    integrity="{{siteData.latest_esri_leaflet_integrity}}"
+  <script src="/esri-leaflet-debug.js"
+    
     crossorigin=""></script>
   
   <!-- Load Esri Leaflet Renderers from CDN -->

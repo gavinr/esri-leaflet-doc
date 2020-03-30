@@ -16,8 +16,7 @@ All builds of Esri Leaflet are available for download on [GitHub](https://github
 #### Esri Leaflet
 
 ```xml
-<script src="https://unpkg.com/esri-leaflet@{{siteData.latest_esri_leaflet}}/dist/esri-leaflet.js"
-    integrity="{{siteData.latest_esri_leaflet_integrity}}"
+<script src="/esri-leaflet-debug.js"
     crossorigin=""></script>
 ```
 

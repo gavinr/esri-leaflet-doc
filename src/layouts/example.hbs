@@ -37,8 +37,7 @@ layout: page.hbs
   <script src="https://unpkg.com/esri-leaflet@{{page.data.legacyEsriLeaflet}}/dist/esri-leaflet.js"></script>
   {{else}}
   <!-- Load Esri Leaflet from CDN -->
-  <script src="https://unpkg.com/esri-leaflet@{{siteData.latest_esri_leaflet}}/dist/esri-leaflet.js"
-  integrity="{{siteData.latest_esri_leaflet_integrity}}"
+  <script src="/esri-leaflet-debug.js"
   crossorigin=""></script>
   {{/if}}
   {{#if page.data.geocoder}}
